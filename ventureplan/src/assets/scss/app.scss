@@ -1,20 +1,15 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-grid; // @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
-@include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
+@include foundation-forms; // @include foundation-range-input;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+@include foundation-badge; // @include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
 @include foundation-card;
@@ -25,27 +20,101 @@
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
+@include foundation-label; // @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
+@include foundation-orbit; // @include foundation-pagination;
+// @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-meter-element;
 @include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
+@include foundation-switch; // @include foundation-table;
+// @include foundation-tabs;
 @include foundation-thumbnail;
 @include foundation-title-bar;
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-float-classes; // @include foundation-flex-classes;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+.topbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.menu > li > a {
+    color: $white;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.deloitte-bold {
+  font-weight: bolder;
+}
+.deloitte-light {
+  font-weight: lighter;
+}
+
+.deloitte-dot{
+  font-weight: 800;
+  color:$primary-color;
+}
+
+#jumbotron {
+  margin:0;
+  color: $white;
+    h2 {
+      font-weight: bold;
+      margin-bottom:1em;
+    }
+    .row.column {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+    }
+    min-height: 600px;
+    background-image: url("http://placehold.it/1200?text=_");
+}
+
+#feature-description {
+    h3 {
+        padding: 0.8em 0;
+    }
+
+    li {
+        margin-bottom: 1em;
+    }
+    background-color: #212121;
+    color: white;
+    margin: 0;
+}
+
+.signup {
+  h3 {
+      padding: 0.8em 0;
+  }
+}
+#primary-signup {
+
+    border-top: 3px solid $alert-color;
+    box-shadow: 12px 0 15px -4px #F5F5F5, -12px 0 8px -4px #F5F5F5;
+    padding: 0 3em;
+}
+
+#secondary-signup {
+    background-color: $primary-color;
+    color: white;
+    .input-group{
+      margin-bottom: 0;
+    }
+}
