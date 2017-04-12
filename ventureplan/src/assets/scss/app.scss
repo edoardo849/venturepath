@@ -101,6 +101,14 @@
 }
 
 #feature-description {
+  .columns{
+    padding: 0 2em;
+  }
+  @media only screen and (min-width: 40.063em) {
+    .medium-6:last-child{
+      border-left: 1px solid $white;
+    }
+  }
     .columns {
       //padding-left:5em;
       //padding-right:5em;
