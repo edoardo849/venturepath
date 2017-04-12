@@ -81,7 +81,15 @@
 }
 
 #jumbotron {
-  margin:0;
+
+  @media #{$medium-only} {
+    min-height:600px;
+  }
+
+  @media #{$landscape} {
+    min-height:600px;
+  }
+
   color: $white;
     h2 {
       font-weight: bold;
@@ -177,6 +185,9 @@
   li {
       margin-bottom: 1em;
 
+  }
+   a {
+    color:$white;
   }
 
   li:last-child{
