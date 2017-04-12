@@ -52,6 +52,13 @@
     color: $white;
 }
 
+.menu  {
+  .button {
+    border-radius:25px;
+  }
+
+}
+
 .img-circle {
     border-radius: 50%;
 }
@@ -68,6 +75,11 @@
   color:$primary-color;
 }
 
+.deloitte-dark.callout.secondary{
+  background-color: #2e2e2e;
+  color: $white;
+}
+
 #jumbotron {
   margin:0;
   color: $white;
@@ -82,11 +94,17 @@
         left: 0;
         z-index: 20;
     }
-    min-height: 600px;
-    background-image: url("http://placehold.it/1200?text=_");
+    background: url("/assets/img/carousel.png") no-repeat top center;
+    background-size: cover;
+    height: 60vh;
+    min-height: 400px;
 }
 
 #feature-description {
+    .columns {
+      //padding-left:5em;
+      //padding-right:5em;
+    }
     h3 {
         padding: 0.8em 0;
     }
@@ -94,8 +112,7 @@
     li {
         margin-bottom: 1em;
     }
-    background-color: #212121;
-    color: white;
+    padding:2em 0;
     margin: 0;
 }
 
@@ -104,17 +121,67 @@
       padding: 0.8em 0;
   }
 }
-#primary-signup {
-
+#first-signup {
+    top: -40px;
+    position: relative;
+    z-index: 20;
+    background-color: $white;
     border-top: 3px solid $alert-color;
-    box-shadow: 12px 0 15px -4px #F5F5F5, -12px 0 8px -4px #F5F5F5;
+    box-shadow: 8px 0 8px -4px rgba(240, 240, 240, 0.5), -12px 0 15px -4px rgba(240, 240, 240, 0.5);
     padding: 0 3em;
 }
 
-#secondary-signup {
+#second-signup {
     background-color: $primary-color;
+    padding: 1.5em 0;
     color: white;
     .input-group{
       margin-bottom: 0;
     }
+}
+
+#main-features {
+  padding: 2em 0;
+}
+
+#third-signup {
+    padding-top: 1em;
+    padding-bottom:5em;
+}
+
+.warning-color {
+  color: $warning-color;
+}
+#ipad-dashboard{
+  h2{
+    font-weight: lighter;
+  }
+
+  padding-top:2em;
+  padding-left: 0;
+  padding-right: 0;
+  img {
+    margin-top:1em;
+  }
+}
+
+#footer {
+  li {
+      margin-bottom: 1em;
+
+  }
+
+  li:last-child{
+    margin-bottom: 0em;
+  }
+
+  padding: 3em 0;
+  margin: 0;
+
+}
+
+.hero {
+  background: url('/assets/img/ipad-dashboard.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
